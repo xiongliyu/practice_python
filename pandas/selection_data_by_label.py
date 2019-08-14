@@ -41,3 +41,12 @@ print(df.loc[:, ['A']])
 print(df.loc[:, ['A', 'B']])
 
 
+# 行列两个轴同时切片
+print(df.loc['20190101':'20190103', ['A', 'C']])
+
+print(df.loc['20190103', ['A', 'C']])
+
+
+# 获取标量值(获取某一个值)
+print(df.loc[dates[0], 'A'])
+print(df.loc['20190101', 'A'])
